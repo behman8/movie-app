@@ -1,4 +1,4 @@
-const usersReducer = () => {
+const usersReducer = (state={user: {}, loggedIn: false}, action) => {
     switch (action.type) {
         case "ADDING_USER":
             return {
