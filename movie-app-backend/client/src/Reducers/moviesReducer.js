@@ -3,7 +3,7 @@ const moviesReducer = (state={movies: []}, action) => {
         case "ADDING_MOVIES":
             return {
                 ...state,
-                cards: action.cards
+                movies: [...action.movies]
             }
 
         default:
